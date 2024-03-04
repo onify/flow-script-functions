@@ -1,10 +1,18 @@
 import * as func from './slugify';
 
 describe('slugify', () => {
-  const text = 'Hello World!';
-  const result = 'hello-world';
+  const testCases = [
+    { text: 'Hello World!', expected: 'hello-world' },
+    { text: 'Google', expected: 'google' },
+    { text: 'Jag är en rejäl påg', expected: 'jag-ar-en-rejal-pag' },
+    { text: 'комплекс', expected: '' },
+    { text: 'Te$t1n£', expected: 'tet1n' },
+  ];
 
-  it(`transform "${text}" to "${result}"`, () => {
-    expect(func.slugify(text)).toBe(result);
-  });
+  for (const testCase of testCases) {
+    it(`transform "${testCase.text}" to "${testCase.expected}"`, () => {
+      const output = func.slugify(testCase.text);
+      expect(output).toBe(testCase.expected);
+    });
+  }
 });
