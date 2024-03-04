@@ -1,4 +1,4 @@
-import * as func from './slugify';
+import * as func from '../src/slugify';
 
 describe('slugify', () => {
   const testCases = [
