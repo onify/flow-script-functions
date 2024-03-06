@@ -1,6 +1,6 @@
 import * as func from '../src/slugify';
 
-describe('slugify', () => {
+describe('Slugify', () => {
   const testCases = [
     { text: 'Hello World!', expected: 'hello-world' },
     { text: 'Google', expected: 'google' },

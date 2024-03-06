@@ -1,6 +1,6 @@
 import * as func from '../src/validate-email';
 
-describe('validate email', () => {
+describe('Validate email', () => {
   const testCases = [
     { text: 'test123@email.com', expected: true },
     { text: 'name@something.', expected: false },
