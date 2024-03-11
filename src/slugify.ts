@@ -1,4 +1,4 @@
-export function slugify(text: string) {
+export function slugify(text: string): string {
   const specialCharacters = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;';
   const validCharacters = 'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------';
   const pattern = new RegExp(specialCharacters.split('').join('|'), 'g');
