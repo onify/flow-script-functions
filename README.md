@@ -1,5 +1,7 @@
 # Onify Script Functions
 
+[![Build latest](https://github.com/onify/script-functions/actions/workflows/build.yaml/badge.svg)](https://github.com/onify/script-functions/actions/workflows/build.yaml)
+
 This library provides various functions for Node.js applications.\
 The functions available are as follows:
 
