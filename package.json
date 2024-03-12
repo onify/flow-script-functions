@@ -1,7 +1,7 @@
 {
-  "name": "@onify/flow-functions",
+  "name": "@onify/script-functions",
   "version": "1.0.0",
-  "description": "Onify Flow Functions",
+  "description": "Onify Script Functions",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "onify",
-    "flow",
-    "function",
+    "javascript",
+    "script",
     "functions"
   ],
   "author": {
@@ -35,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/onify/flow-functions.git"
+    "url": "https://github.com/onify/script-functions.git"
   }
 }
