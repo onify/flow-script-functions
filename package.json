@@ -35,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/onify/script-functions.git"
+    "url": "git+https://github.com/onify/script-functions.git"
   }
 }
