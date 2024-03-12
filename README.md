@@ -3,9 +3,9 @@
 This library provides various functions for Node.js applications.\
 The functions available are as follows:
 
-- [generate UUID](./docs/generate-uuid.md)
-- [slugify](./docs/slugify.md)
-- [validate email](./docs/validate-email.md)
+- [generate UUID](#generate-uuid)
+- [slugify](#slugify)
+- [validate email](#validate-email)
 
 ## Installation
 
@@ -41,6 +41,90 @@ let output = functions.slugify('Hello World!');
 // or
 // when using specific imports in TypeScript
 output = slugify('Hello World!');
+```
+
+## Generate UUID
+
+Creates a GUID string using `crypto`
+
+### Syntax
+
+```
+generateUuid(): string
+```
+
+### Return value
+
+GUID string with the format `${string}-${string}-${string}-${string}-${string}`
+
+### Example
+
+```ts
+import { generateUuid } from '@onify/flow-functions';
+
+// ...
+const id = generateUuid(); // generates random GUID
+console.log(id); // sample output: "55d03475-45fe-4415-81d7-8cd052081fe1"
+```
+
+## Slugify
+
+Transforms string to kebab case
+
+### Syntax
+
+```
+slugify(text: string): string
+```
+
+### Parameters
+
+| Name | Type     | Description                   |
+| :--- | :------- | ----------------------------- |
+| text | `string` | the string value to transform |
+
+### Return value
+
+`kebab-case` of the input
+
+### Example
+
+```ts
+import { slugify } from '@onify/flow-functions';
+
+// ...
+const transformedText = slugify('Hello World!');
+console.log(transformedText); // output: "hello-world"
+```
+
+## Validate Email
+
+Checks if string is a valid email format
+
+### Syntax
+
+```
+validateEmail(email: string): boolean
+```
+
+### Parameters
+
+| Name  | Type     | Description        |
+| :---- | :------- | ------------------ |
+| email | `string` | string to validate |
+
+### Return value
+
+`true` if input is a valid email format, otherwise `false`
+
+### Example
+
+```ts
+import { validateEmail } from '@onify/flow-functions';
+
+// ...
+const isValid = slugify('sample@onify.co');
+console.log(isValid); // output: true
 ```
 
 ## Release new version and publish to npm
