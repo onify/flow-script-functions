@@ -61,9 +61,7 @@ generateUuid(): string
 
 #### Return value
 
-| Type     | Description                                                                  |
-| :------- | :--------------------------------------------------------------------------- |
-| `string` | a string with the format `${string}-${string}-${string}-${string}-${string}` |
+GUID string with the format `${string}-${string}-${string}-${string}-${string}`
 
 #### Example
 
