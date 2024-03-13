@@ -1,6 +1,6 @@
 {
   "name": "@onify/script-functions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Onify Script Functions",
   "main": "dist/index.js",
   "scripts": {
