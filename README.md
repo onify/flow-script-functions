@@ -134,4 +134,4 @@ console.log(isValid); // output: true
 1. Update `version` in `package.json`
 2. Update `CHANGELOG.md`
 3. Commit and push the changes
-4. Run `npm run publish`
+4. Run `npm run release`
