@@ -1,5 +1,5 @@
 {
-  "name": "@onify/script-functions",
+  "name": "@onify/flow-script-functions",
   "version": "1.0.2",
   "description": "Onify Script Functions",
   "main": "dist/index.js",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onify/script-functions.git"
+    "url": "git+https://github.com/onify/flow-script-functions.git"
   },
   "files": [
     "dist"

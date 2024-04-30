@@ -1,6 +1,6 @@
 # Onify Script Functions
 
-[![Build latest](https://github.com/onify/script-functions/actions/workflows/build.yaml/badge.svg)](https://github.com/onify/script-functions/actions/workflows/build.yaml)
+[![Build latest](https://github.com/onify/flow-script-functions/actions/workflows/build.yaml/badge.svg)](https://github.com/onify/flow-script-functions/actions/workflows/build.yaml)
 
 This library provides various functions for Node.js applications.\
 The functions available are as follows:
@@ -12,7 +12,7 @@ The functions available are as follows:
 ## Installation
 
 ```
-npm install @onify/script-functions
+npm install @onify/flow-script-functions
 ```
 
 ## Usage
@@ -22,17 +22,17 @@ npm install @onify/script-functions
 ##### Javascript
 
 ```js
-const functions = require('@onify/script-functions');
+const functions = require('@onify/flow-script-functions');
 ```
 
 ##### Typescript
 
 ```ts
 // import all functions
-import * as functions from '@onify/script-functions';
+import * as functions from '@onify/flow-script-functions';
 // or
 // import specific functions
-import { slugify } from '@onify/script-functions';
+import { slugify } from '@onify/flow-script-functions';
 ```
 
 ### Use the functions:
@@ -62,7 +62,7 @@ GUID string with the format `${string}-${string}-${string}-${string}-${string}`
 ### Example
 
 ```ts
-import { generateUuid } from '@onify/script-functions';
+import { generateUuid } from '@onify/flow-script-functions';
 
 // ...
 const id = generateUuid(); // generates random GUID
@@ -92,7 +92,7 @@ slugify(text: string): string
 ### Example
 
 ```ts
-import { slugify } from '@onify/script-functions';
+import { slugify } from '@onify/flow-script-functions';
 
 // ...
 const transformedText = slugify('Hello World!');
@@ -122,7 +122,7 @@ validateEmail(email: string): boolean
 ### Example
 
 ```ts
-import { validateEmail } from '@onify/script-functions';
+import { validateEmail } from '@onify/flow-script-functions';
 
 // ...
 const isValid = slugify('sample@onify.co');
