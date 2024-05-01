@@ -17,6 +17,14 @@ npm install @onify/flow-script-functions
 
 ## Usage
 
+### Use in Onify Flow:
+Use `functions.*` to access the functions present in this library.
+
+```js
+const result = functions.slugify('sample onify');
+console.log(result); // output: sample-onify
+```
+
 ### Import the library:
 
 ##### Javascript
