@@ -2,12 +2,21 @@
 
 [![Build latest](https://github.com/onify/flow-script-functions/actions/workflows/build.yaml/badge.svg)](https://github.com/onify/flow-script-functions/actions/workflows/build.yaml)
 
-This library provides various functions for Node.js applications.\
+This library provides various functions designed for Onify Flow that can also be used in Node.js applications.
+
 The functions available are as follows:
 
 - [generate UUID](#generate-uuid)
 - [slugify](#slugify)
 - [validate email](#validate-email)
+
+## Onify Flow
+Use `functions.*` to access the functions present in this library.
+
+```js
+const result = functions.slugify('sample onify');
+console.log(result); // output: sample-onify
+```
 
 ## Installation
 
@@ -16,14 +25,6 @@ npm install @onify/flow-script-functions
 ```
 
 ## Usage
-
-### Use in Onify Flow:
-Use `functions.*` to access the functions present in this library.
-
-```js
-const result = functions.slugify('sample onify');
-console.log(result); // output: sample-onify
-```
 
 ### Import the library:
 
