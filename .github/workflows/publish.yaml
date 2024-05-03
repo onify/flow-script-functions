@@ -29,11 +29,6 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Login to npm
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm login --registry=https://registry.npmjs.org
-
       - name: Publish package
         run: npm publish --access public
         env:
